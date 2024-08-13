@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web avanzada con gráficos, localStorage, Geolocation, Drag and Drop y accesibilidad mejorada.">
+    <meta name="keywords" content="HTML5, Canvas, Geolocation, Drag and Drop, Accesibilidad, SEO, Web Development">
+    <meta name="author" content="Tu Nombre">
+    <title>Página Web Avanzada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav aria-label="Main Navigation">
+        <ul>
+            <li><a href="#canvas-section">Gráficos</a></li>
+            <li><a href="#storage-section">LocalStorage</a></li>
+            <li><a href="#geolocation-section">Geolocation</a></li>
+            <li><a href="#dragdrop-section">Drag & Drop</a></li>
+        </ul>
+    </nav>
+
+    <section id="canvas-section" aria-labelledby="canvas-title">
+        <div>
+            <h1 id="canvas-title">Gráfico Circular</h1>
+            <canvas id="pieChart" width="400" height="400" aria-label="Gráfico Circular">
+            </canvas>
+        </div>
+    </section>
+    
+    
+
+    <section id="storage-section" aria-labelledby="storage-title">
+        <div>
+            <h1 id="storage-title">Almacenamiento con localStorage</h1>
+            <input type="text" id="storage-input" aria-label="Ingrese texto para almacenar">
+            <button onclick="saveData()">Guardar en localStorage</button>
+            <button onclick="retrieveData()">Recuperar Datos</button>
+            <p id="stored-data"></p>
+        </div>
+    </section>
+
+    <section id="geolocation-section" aria-labelledby="geolocation-title">
+        <div>
+            <h1 id="geolocation-title">Tu Ubicación</h1>
+            <button onclick="getLocation()">Obtener Ubicación</button>
+            <p id="location"></p>
+        </div>
+    </section>
+
+    <section id="dragdrop-section" aria-labelledby="dragdrop-title">
+        <div>
+            <h1 id="dragdrop-title">Reordenar Lista</h1>
+            <ul id="sortable-list">
+                <li draggable="true" aria-grabbed="false">Elemento 1</li>
+                <li draggable="true" aria-grabbed="false">Elemento 2</li>
+                <li draggable="true" aria-grabbed="false">Elemento 3</li>
+                <li draggable="true" aria-grabbed="false">Elemento 4</li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

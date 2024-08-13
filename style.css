@@ -1,0 +1,208 @@
+/* estilos globales */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif,
+    sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  background-image: linear-gradient(to right top, #051937, #003a51, #035a5d, #497962, #88946c);
+}
+
+input {
+	font-size: 16px;
+	padding: 10px;
+	width: 100%;
+	outline: none;
+	background: #ffffff;
+	color: #5c5858;
+	border: 1px solid #6b6b6d;
+	border-radius: 10px;
+	transition: .3s ease;
+}
+
+input:focus {
+	background: #ffffff;
+	border: 1px solid #2b6df0;
+	border-radius: 10px;
+}
+
+input::placeholder {
+	color: #DDDDDD;
+}
+
+button {
+	font-size: 16px;
+	padding: 10px;
+	width: 100%;
+	background: #0972af;
+	color: white;
+  border: none;
+	border-radius: 10px;
+  cursor: pointer;
+	transition: .3s ease;
+}
+
+button:focus {
+	background: #0972af;
+	border: none;
+	border-radius: 10px;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #383a3a;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 14px 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #575757;
+}
+
+/* canvas section */
+
+#canvas-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#canvas-section div {
+  margin: 10px 0;
+}
+
+#canvas-section label {
+  margin-right: 10px;
+}
+
+#pieChart {
+  margin-bottom: 20px;
+}
+
+/* storage section */
+
+#storage-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#storage-section div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* geolocation-section */
+
+#geolocation-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#geolocation-section div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* dragdrop-section */
+
+#dragdrop-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#dragdrop-section div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#sortable-list {
+  list-style-type: none;
+  padding: 20px;
+  border-radius: 15px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  background-color: #fff;
+}
+
+#sortable-list li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  cursor: grab;
+  border-radius: 5px;
+}
+
+#sortable-list li.dragging {
+  opacity: 0.5;
+}
